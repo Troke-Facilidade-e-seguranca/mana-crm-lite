@@ -142,3 +142,47 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---- CRM Manaus: tema (verde amazônia + citrus) ---- */
+@theme inline {
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.9rem;
+  --background: oklch(0.976 0.012 110);
+  --foreground: oklch(0.235 0.035 155);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.235 0.035 155);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.235 0.035 155);
+  --primary: oklch(0.44 0.105 158);
+  --primary-foreground: oklch(0.985 0.015 110);
+  --secondary: oklch(0.945 0.024 120);
+  --secondary-foreground: oklch(0.3 0.05 158);
+  --muted: oklch(0.945 0.018 118);
+  --muted-foreground: oklch(0.5 0.03 150);
+  --accent: oklch(0.82 0.16 92);
+  --accent-foreground: oklch(0.26 0.05 155);
+  --destructive: oklch(0.57 0.2 26);
+  --destructive-foreground: oklch(0.985 0.01 110);
+  --success: oklch(0.55 0.14 152);
+  --warning: oklch(0.68 0.15 70);
+  --info: oklch(0.55 0.12 235);
+  --border: oklch(0.895 0.02 120);
+  --input: oklch(0.895 0.02 120);
+  --ring: oklch(0.44 0.105 158);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
