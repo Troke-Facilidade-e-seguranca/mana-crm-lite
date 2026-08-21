@@ -97,8 +97,10 @@ function App() {
             value={config.meuNome}
             onChange={(e) => actions.setConfig({ meuNome: e.target.value })}
           />
+          <ThemeSwitch />
           <ImportDialog />
           <NovoContato />
+
         </div>
       </header>
 
